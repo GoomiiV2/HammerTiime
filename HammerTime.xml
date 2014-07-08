@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Component xmlns="http://www.red5studios.com/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.red5studios.com/ ../../../../schemas/component.xsd">
+    <Info
+        title="HammerTine"
+        author="Arkii"
+        description="Stop! Hammer time"
+        url=""
+        uiVersion="1000"
+    />
+
+    <Events>
+        <Event name="ON_PLAYER_READY"           bind="OnPlayerReady" />
+        <Event name="ON_ABILITY_USED"		    bind="OnAblityUsed"/>
+    </Events>
+
+    <Frames>
+        <WebFrame name="Web" dimensions="center-x:50%; center-y:50%; width:100%; height:100%;" type-target="false" enable-plugins="true" showloading="false">
+            <Children>
+                <Self dimensions="dock:fill" style="shadow:0"/>
+            </Children>
+        </WebFrame>
+    </Frames>
+</Component>
